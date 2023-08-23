@@ -29,34 +29,34 @@ func NewLooger(p string) *Logger {
 
 // Create No-formatted logs
 func (l *Logger) Debug(v ...interface{}) {
-	l.debug.Panicln(v...)
+	l.debug.Println(v...)
 }
 
 func (l *Logger) Info(v ...interface{}) {
-	l.info.Panicln(v...)
+	l.info.Println(v...)
 }
 
 func (l *Logger) Warn(v ...interface{}) {
-	l.warning.Panicln(v...)
+	l.warning.Println(v...)
 }
 
 func (l *Logger) Error(v ...interface{}) {
-	l.err.Panicln(v...)
+	l.err.Println(v...)
 }
 
 // Create Format Enabled Logs
 func (l *Logger) Debugf(format string, v ...interface{}) {
-	l.debug.Panicf(format, v...)
+	l.debug.Printf(format, v...)
 }
 
 func (l *Logger) Infof(format string, v ...interface{}) {
-	l.info.Panicf(format, v...)
+	l.info.Printf(format, v...)
 }
 
 func (l *Logger) Warnf(format string, v ...interface{}) {
-	l.warning.Panicf(format, v...)
+	l.warning.Printf(format, v...)
 }
 
 func (l *Logger) Errorf(format string, v ...interface{}) {
-	l.err.Panicf(format, v...)
+	l.err.Printf(format, v...)
 }
