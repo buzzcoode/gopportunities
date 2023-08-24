@@ -1,7 +1,7 @@
 .PHONY: default run build test docs clean
 
 # Variables
-APP_NAME=gopportunities
+APP_NAME=weworkanywhere
 
 # Tasks
 default: run-with-docs
